@@ -1,0 +1,54 @@
+.wrapper {
+  max-width: 1280px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 125%;
+}
+
+h1,
+h2 {
+  font-family: $headingFont;
+  margin: 0;
+}
+
+h3,
+h4,
+h5,
+button,
+a,
+p {
+  font-family: $mainFont;
+  margin: 0;
+}
+
+h3,
+h4,
+h5,
+nav,
+a {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 35px;
+  border: none;
+  background-color: $accent;
+  
+  a {
+    color: $blackText;
+  }
+}
+
+
+
