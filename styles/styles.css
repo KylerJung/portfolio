@@ -233,7 +233,8 @@ h4,
 h5,
 button,
 a,
-p {
+p,
+label {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
 }
@@ -259,12 +260,13 @@ a {
 }
 
 button {
-  padding: 10px 35px;
+  padding: 10px 0;
   border: none;
   background-color: #EEAF98;
 }
 button a {
   color: #222527;
+  padding: 10px 35px;
 }
 
 ul {
@@ -372,4 +374,142 @@ header {
   padding-top: 15px;
   color: #222527;
   font-size: 1rem;
+}
+
+#projectContainer {
+  padding: 100px 0;
+  background-color: #F2F4F5;
+}
+#projectContainer h2 {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.allProjectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.singleProjectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
+  border-bottom: 3px solid #fff;
+}
+.singleProjectContainer .imgContainer {
+  width: 100%;
+}
+.singleProjectContainer .textContainer {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.singleProjectContainer .textContainer h5 {
+  text-transform: uppercase;
+}
+.singleProjectContainer .textContainer h3,
+.singleProjectContainer .textContainer h5,
+.singleProjectContainer .textContainer p {
+  padding-bottom: 10px;
+}
+.singleProjectContainer img {
+  max-width: 100%;
+}
+
+.singleProjectContainer:last-child {
+  border-bottom: none;
+}
+
+.alt {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: end;
+}
+.alt .textContainer {
+  padding-right: 10px;
+}
+
+.norm .textContainer {
+  padding-left: 10px;
+}
+
+.buttonContainer button {
+  margin: 0 5px;
+}
+
+#getInTouchContainer {
+  padding: 100px 0;
+  background-color: #5169BD;
+  color: #fff;
+}
+#getInTouchContainer h2,
+#getInTouchContainer .socialContainer,
+#getInTouchContainer p {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.socialContainer i {
+  color: #EEAF98;
+  font-size: 1.2rem;
+  padding: 0 5px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+form label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 20px 0 10px 0;
+}
+form button {
+  margin-top: 20px;
+  width: 20%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+footer {
+  background-color: #424B6D;
+  color: #fff;
+  padding: 25px 0;
+}
+footer p {
+  text-align: center;
 }

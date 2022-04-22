@@ -19,7 +19,8 @@ h4,
 h5,
 button,
 a,
-p {
+p,
+label {
   font-family: $mainFont;
   margin: 0;
 }
@@ -45,12 +46,13 @@ a {
 }
 
 button {
-  padding: 10px 35px;
+  padding: 10px 0;
   border: none;
   background-color: $accent;
   
   a {
     color: $blackText;
+    padding: 10px 35px;
   }
 }
 
