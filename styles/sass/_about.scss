@@ -1,0 +1,19 @@
+#aboutMeContainer {
+    display: flex;
+    justify-content: center;
+    background-color: $solidWhite;
+}
+
+.container {
+  text-align: center;
+  padding: 100px 0;
+  width: 50%;
+
+  h2 {
+    color: $secondary;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}

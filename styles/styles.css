@@ -250,6 +250,10 @@ h1 {
   font-size: 6rem;
 }
 
+h2 {
+  font-size: 4rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -261,6 +265,10 @@ button {
 }
 button a {
   color: #222527;
+}
+
+ul {
+  padding: 0;
 }
 
 header {
@@ -308,4 +316,60 @@ header {
 }
 .flexContainer .titleContainer h3 {
   margin-bottom: 25px;
+}
+
+#aboutMeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 100px 0;
+  width: 50%;
+}
+.container h2 {
+  color: #5169BD;
+}
+.container p {
+  line-height: 1.6;
+}
+
+#skillsContainer {
+  padding: 100px 0;
+  background-color: #CAD2EC;
+  text-align: center;
+}
+#skillsContainer h2 {
+  padding-bottom: 50px;
+  color: #222527;
+}
+#skillsContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#skillsContainer ul li {
+  list-style: none;
+  padding: 25px;
+}
+#skillsContainer ul li i {
+  font-size: 4rem;
+  color: #222527;
+}
+#skillsContainer ul li h4 {
+  text-transform: uppercase;
+  padding-top: 15px;
+  color: #222527;
+  font-size: 1rem;
 }

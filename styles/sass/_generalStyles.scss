@@ -36,6 +36,10 @@ h1 {
   font-size: 6rem;
 }
 
+h2 {
+  font-size: 4rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -48,6 +52,10 @@ button {
   a {
     color: $blackText;
   }
+}
+
+ul {
+  padding: 0;
 }
 
 
