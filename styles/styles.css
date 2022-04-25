@@ -388,6 +388,10 @@ header {
   line-height: 1.6;
 }
 
+.secondParagraph {
+  padding-top: 25px;
+}
+
 #skillsContainer {
   padding: 100px 0;
   background-color: #CAD2EC;
