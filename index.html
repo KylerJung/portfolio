@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Kyler's Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +13,19 @@
 </head>
 <body>
   <!-- header goes here -->
-  <header>
+  <header id="header">
     <div class="wrapper">
       <div class="navContainer"> <!-- nav goes here -->
         <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+          <div class="mobileNav">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <ul class="desktopNav">
+            <li><a class="links" href="#header">Home</a></li>
+            <li><a class="links" href="#aboutMeContainer">About</a></li>
+            <li><a class="links" href="#projectContainer">Projects</a></li>
+            <li><a class="links" href="#getInTouchContainer">Contact</a></li>
           </ul>
         </nav>
       </div> <!-- nav ends -->
@@ -110,12 +114,12 @@
                 <img src="./assets/macbook-mockup-planted.png" alt="mockup of a laptop showing the planted website">
               </div>
               <div class="textContainer">
-                <h3>project title here</h3>
-                <h5>html, css, react, javascript</h5>
-                <p>some project info Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate.</p>
+                <h3>Planted</h3>
+                <h5>html, css, sass</h5>
+                <p>A simple multi-paged project created mainly with HTML and SASS/CSS, showing off a variety of HTML and SASS/CSS skills</p>
                 <div class="buttonContainer">
-                  <button><a href="#">view live</a></button>
-                  <button><a href="#">view code</a></button>
+                  <button><a href="https://confident-babbage-33d223.netlify.app/">view live</a></button>
+                  <button><a href="https://github.com/KylerJung/KylerJung-project1">view code</a></button>
                 </div>
               </div>
             </div>
@@ -125,12 +129,12 @@
                 <img src="./assets/macbook-mockup-dog.png" alt="mockup of a laptop showing the dog discovery website">
               </div>
               <div class="textContainer">
-                <h3>project title here</h3>
-                <h5>html, css, react, javascript</h5>
-                  <p>some project info Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate.</p>
+                <h3>Dog Discovery</h3>
+                <h5>html, css, sass, javascript</h5>
+                  <p>A paired programming project with a focus on Javascript! a single page website which shows pictures and information about dog brreds based on selection</p>
                   <div class="buttonContainer">
-                    <button><a href="#">view live</a></button>
-                    <button><a href="#">view code</a></button>
+                    <button><a href="https://dashing-stardust-9d5901.netlify.app">view live</a></button>
+                    <button><a href="https://github.com/KylerJung/dog-discovery">view code</a></button>
                   </div>
               </div>
             </div>
@@ -140,12 +144,12 @@
                 <img src="./assets/macbook-mockup-pokemon.png" alt="mockup of a laptop showing the shiny pokemon page">
               </div>
               <div class="textContainer">
-                <h3>project title here</h3>
-                <h5>html, css, react, javascript</h5>
-                  <p>some project info Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate.</p>
+                <h3>Who's That Pokémon?</h3>
+                <h5>html, css, jquery</h5>
+                  <p>A simple single-page app using Jquery which allows you to see the "shiny" version of each of the original 151 Pokémon</p>
                   <div class="buttonContainer">
-                    <button><a href="#">view live</a></button>
-                    <button><a href="#">view code</a></button>
+                    <button><a href="https://incandescent-gelato-a526cf.netlify.app">view live</a></button>
+                    <button><a href="https://github.com/KylerJung/shiny-pokemon-jquery">view code</a></button>
                   </div>
               </div>
             </div>
@@ -175,15 +179,16 @@
           <h2>get in touch</h2>
 
           <div class="socialContainer">
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-solid fa-envelope"></i>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/KylerJung"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:kylerjung121@gmail.com"><i class="fa-solid fa-envelope"></i></a>
           </div>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed autem in earum nulla, nisi vero tenetur explicabo. Beatae, doloribus adipisci!</p>
+          <p>Thank you for taking the time to look at my projects so far! please feel free to reach out through the form below, or other methods shown!</p>
 
+          <!-- action="https://formspree.io/f/mrgjoewy" -->
 
-          <form action="" method="get">
+          <form data-netlify="true" method="POST">
             <label for="name">name</label>
             <input type="text" name="name" id="name">
 
@@ -208,5 +213,6 @@
   </footer>
 
   <script src="https://kit.fontawesome.com/7628e500f7.js" crossorigin="anonymous"></script>
+  <script src="./scripts.js"></script>
 </body>
 </html>

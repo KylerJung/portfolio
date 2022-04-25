@@ -56,8 +56,35 @@ button {
   }
 }
 
+button:hover,
+button:focus {
+  background-color: $blackText;
+  color: $offWhite;
+  transition: 0.5s;
+
+  a {
+    color: $offWhite;
+    transition: 0.5s;
+  }
+}
+
 ul {
   padding: 0;
+}
+
+.buttonContainer {
+  button {
+    width: 160px;
+  }
+}
+
+.mobileNav {
+  visibility: hidden;
+}
+
+*,
+html {
+  scroll-behavior: smooth !important;
 }
 
 

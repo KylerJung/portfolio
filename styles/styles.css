@@ -269,8 +269,35 @@ button a {
   padding: 10px 35px;
 }
 
+button:hover,
+button:focus {
+  background-color: #222527;
+  color: #F2F4F5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+button:hover a,
+button:focus a {
+  color: #F2F4F5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 ul {
   padding: 0;
+}
+
+.buttonContainer button {
+  width: 160px;
+}
+
+.mobileNav {
+  visibility: hidden;
+}
+
+*,
+html {
+  scroll-behavior: smooth !important;
 }
 
 header {
@@ -296,6 +323,10 @@ header {
   padding: 25px;
   color: #fff;
 }
+.navContainer ul a:hover,
+.navContainer ul a:focus {
+  color: #EEAF98;
+}
 
 .flexContainer {
   display: -webkit-box;
@@ -318,6 +349,21 @@ header {
 }
 .flexContainer .titleContainer h3 {
   margin-bottom: 25px;
+}
+
+.mobileNav {
+  visibility: hidden;
+  position: absolute;
+  z-index: 20;
+  padding-top: 50px;
+}
+.mobileNav i {
+  color: white;
+  font-size: 1.5rem;
+}
+.mobileNav i:focus,
+.mobileNav i:hover {
+  color: #EEAF98;
 }
 
 #aboutMeContainer {
@@ -366,14 +412,14 @@ header {
   padding: 25px;
 }
 #skillsContainer ul li i {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #222527;
 }
 #skillsContainer ul li h4 {
   text-transform: uppercase;
   padding-top: 15px;
   color: #222527;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 #projectContainer {
@@ -415,6 +461,7 @@ header {
 .singleProjectContainer .textContainer {
   -ms-flex-item-align: center;
       align-self: center;
+  width: 100%;
 }
 .singleProjectContainer .textContainer h5 {
   text-transform: uppercase;
@@ -504,6 +551,9 @@ form button {
   -ms-flex-item-align: center;
       align-self: center;
 }
+form textarea {
+  resize: none;
+}
 
 footer {
   background-color: #424B6D;
@@ -512,4 +562,105 @@ footer {
 }
 footer p {
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .singleProjectContainer {
+    width: 90%;
+  }
+
+  .contactContainer {
+    width: 65%;
+  }
+}
+@media (max-width: 930px) {
+  .singleProjectContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 880px) {
+  .container {
+    width: 70%;
+  }
+
+  .contactContainer {
+    width: 80%;
+  }
+}
+@media (max-width: 880px) {
+  .singleProjectContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 65%;
+  }
+  .singleProjectContainer .textContainer {
+    text-align: center;
+  }
+}
+@media (max-width: 660px) {
+  .singleProjectContainer {
+    width: 80%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  form button {
+    width: 35%;
+  }
+
+  .navContainer ul {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: -1000px;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #222527;
+    text-align: end;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+
+  .desktopNav.click {
+    left: 0;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+
+  .mobileNav {
+    visibility: visible;
+  }
+}
+@media (max-width: 550px) {
+  .singleProjectContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .buttonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .buttonContainer button {
+    margin-bottom: 10px;
+  }
+
+  form button {
+    width: 50%;
+  }
 }
