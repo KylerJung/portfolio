@@ -1,6 +1,3 @@
-// create some css for the nav as well
-
-
 @media (max-width: 1200px) {
   .singleProjectContainer {
     width: 90%;
@@ -51,16 +48,6 @@
     width: 35%;
   }
 
-
-
-  // .mobileNavClick {
-  //   position: fixed;
-  //   left: 0;
-  //   z-index: 10;
-  //   flex-direction: column;
-  //   background-color: $blackText;
-  // }
-
   .navContainer ul {
     height: 100vh;
     width: 100%;
@@ -77,8 +64,6 @@
     left: 0;
     transition: 1s;
   }
-
-  
 
   .mobileNav {
     visibility: visible;

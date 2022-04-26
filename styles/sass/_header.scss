@@ -3,7 +3,6 @@ header {
   background-color: $primary;
 }
 
-
 .navContainer {
   ul {
     display: flex;
@@ -28,13 +27,11 @@ header {
   }
 }
 
-
 .flexContainer {
   display: flex;
   height: 90vh;
   justify-content: center;
   align-items: center;
-
 
   .titleContainer {
     text-align: center;
